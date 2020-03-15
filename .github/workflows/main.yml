@@ -12,10 +12,10 @@ jobs:
           node-version: 8
       - name: Install NPM dependencies
         run: npm i
-      - name: "Remove folder: node_modules/"
-        run: rm -rf node_modules/
       - name: Install COMPOSER dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      - name: Cleanup build from unecessary files and folders
+        run: rm -rf node_modules/ .git* composer.* package*.json
       - uses: actions/upload-artifact@v1
         with:
           name: beccashome
