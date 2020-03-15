@@ -12,6 +12,7 @@ jobs:
           node-version: 8
       - name: Install NPM dependencies
         run: npm i
+      - run: npm run css
       - name: Install COMPOSER dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
       - name: Cleanup build from unecessary files and folders
