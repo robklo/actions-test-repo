@@ -16,12 +16,7 @@ jobs:
         run: rm -rf node_modules/
       - name: Install COMPOSER dependencies
         run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
-#      - name: github-action-build
-#        uses: skx/github-action-build@release-0.6.1
-      - name: Create a directory for the artifact
-        run: mkdir -p path/to/artifact
-      - run: echo hello > path/to/artifact/world.txt
       - uses: actions/upload-artifact@v1
         with:
-          name: my-artifact
-          path: path/to/artifact
+          name: beccashome
+          path: .
