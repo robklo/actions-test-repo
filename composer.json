@@ -1,0 +1,13 @@
+{
+    "name": "robert/actions-test-repo",
+    "type": "project",
+    "require": {
+        "robklo/csv": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Robert Klodzinski",
+            "email": "robert.klodzinski@gmail.com"
+        }
+    ]
+}

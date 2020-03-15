@@ -1,0 +1,51 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "68448427a21304f8daa36c4ee6e8fed6",
+    "packages": [
+        {
+            "name": "robklo/csv",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/robklo/csv.git",
+                "reference": "97e0d12c29edb331780f2ddaa04cf581c2b2f121"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/robklo/csv/zipball/97e0d12c29edb331780f2ddaa04cf581c2b2f121",
+                "reference": "97e0d12c29edb331780f2ddaa04cf581c2b2f121",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Robklo\\Csv\\": "src/Robklo/Csv"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Kłodziński",
+                    "email": "robert.klodzinski@gmail.com"
+                }
+            ],
+            "description": "Simple CSV Reader and Writer",
+            "time": "2019-10-08T12:22:31+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

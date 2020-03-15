@@ -1,0 +1,27 @@
+{
+  "name": "actions-test-repo",
+  "version": "1.0.0",
+  "description": "Test repo to play with github's actions",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "export HIGHCHARTS_USE_STYLED=NO HIGHCHARTS_VERSION=latest ACCEPT_HIGHCHARTS_LICENSE=YES",
+    "precss": "node-sass assets/src/scss/index.scss --source-map-root . --source-map-embed true -o assets/dest/css/.",
+    "css": "postcss assets/dest/css/index.css --use autoprefixer -b \"last 2 versions\" --map -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robklo/actions-test-repo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robklo/actions-test-repo/issues"
+  },
+  "homepage": "https://github.com/robklo/actions-test-repo#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "exorcist": "^1.0.1",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3"
+  }
+}
