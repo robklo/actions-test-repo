@@ -10,7 +10,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 8
-      - uses: actions/upload-artifact@v1
       - name: Install NPM dependencies
         run: npm i
       - name: "Remove folder: node_modules/"
@@ -22,6 +21,7 @@ jobs:
       - name: Create a directory for the artifact
         run: mkdir -p path/to/artifact
       - run: echo hello > path/to/artifact/world.txt
+      - uses: actions/upload-artifact@v1
         with:
           name: my-artifact
           path: path/to/artifact
